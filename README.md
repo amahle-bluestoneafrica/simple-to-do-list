@@ -7,7 +7,7 @@ A simple to-do list to demonstrate JavaScript fundamentals
 * JavaScript
 
 ## ✨ Features
-* functionality to create, add, and display tasks
+* functionality to create, add, display tasks and mark completed tasks.
 
 ## ⚙️ Installation
 To view the project locally, clone the repository and open index.html in your browser.
