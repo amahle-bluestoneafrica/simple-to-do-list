@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 250px;
+    background: url("https://media.istockphoto.com/id/1480381152/vector/seamless-pattern-with-avocado-healthy-vegan-food-vector-abstract-modern-illustration.jpg?s=2048x2048&w=is&k=20&c=Gn7vDWyGvusHX5PXlBuYDXuf_MHwDeEdETUK7CR2b90=");
+}
+
+.toDoListContainer {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 650px;
+    background-color: #F5F3E5;
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding-left: 40px;
+    border-bottom: 3px solid lightgray;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #864119;
+    color: white;
+}
+
+.addTaskContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.addTaskContainer input {
+    outline: none;
+}
+
+.enterTask {
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid darkgray;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 20px;
+}
+
+.addTaskBtn {
+    width: 100px;
+    height: 28px;
+    border-radius: 4px;
+    background-color: rgb(23, 96, 253);
+    color: white;
+
+}
+
+.deleteTaskBtn {
+    width: 100px;
+    height: 28px;
+    border-radius: 4px;
+    background-color: rgb(252, 26, 26);
+    color: white;
+}
