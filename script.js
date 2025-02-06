@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const minutes = now.getMinutes().toString().padStart(2, '0');
         const seconds = now.getSeconds().toString().padStart(2, '0');
 
-        const formattedDateTime = `${month}/${day}/${year} ${hours}:${minutes}:${seconds}`;
+        const formattedDateTime = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
 
         document.getElementById('datetime').textContent = formattedDateTime;
     }
