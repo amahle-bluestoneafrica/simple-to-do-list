@@ -153,7 +153,5 @@ function filterTasks(filter) {
     document.querySelector('.displayTaskContainer').innerHTML = '';
     filteredTasks.forEach(task => {
         createTaskElement(task.text, task.id, task.completed);
-    });
-
-    
+    });  
 }
