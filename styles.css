@@ -51,6 +51,7 @@ body {
 
 .enterTask {
     height: 20px;
+    width: 520px;
     border: none;
     border-bottom: 1px solid darkgray;
     background-color: transparent;
@@ -60,7 +61,7 @@ body {
 }
 
 .addTaskBtn {
-    width: 100px;
+    width: 130px;
     height: 28px;
     border-radius: 4px;
     background-color: rgb(23, 96, 253);
@@ -68,10 +69,54 @@ body {
 
 }
 
-.deleteTaskBtn {
-    width: 100px;
-    height: 28px;
-    border-radius: 4px;
-    background-color: rgb(252, 26, 26);
-    color: white;
+.addTaskBtn:hover {
+    background-color: rgb(9, 68, 196);
+    cursor: pointer;
+}
+
+.displayTaskContainer {
+    display: flex;
+    flex-direction: column;
+    max-height: 540px;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.displayTaskContainer:hover {
+    overflow-y: auto;
+}
+
+.taskRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.taskRow button {
+    border: none;
+    background-color: transparent;
+    
+}
+
+.material-symbols-outlined {
+    color: lightgray;
+}
+
+.material-symbols-outlined:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+.taskComplete {
+    height: 20px;
+    width: 20px;
+}
+
+.taskItem {
+    font-size: 16px;
+    line-height: 20px;
+    width: 565px;
 }
