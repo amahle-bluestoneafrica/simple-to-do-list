@@ -15,6 +15,21 @@ document.addEventListener('DOMContentLoaded', function () {
             alert("Please enter a task!");
         }
     });
+
+    // Adds new task on pressing Enter key
+    document.getElementById('enterTask').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            const taskText = event.target.value.trim();
+
+            // Validates input to ensure it's not empty
+            if (taskText !== "") {
+                addTaskToLocalStorage(taskText);
+                event.target.value = ''; // Clears input field
+            } else {
+                alert("Please enter a task!");
+            }
+        }
+    });
     
     // Filters tasks based on completed, pending and all
     document.getElementById('filterSelect').addEventListener('change', function () {
