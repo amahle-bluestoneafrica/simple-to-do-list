@@ -18,8 +18,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     padding: 60px 250px;
-    background: url("https://media.istockphoto.com/id/1480381152/vector/seamless-pattern-with-avocado-healthy-vegan-food-vector-abstract-modern-illustration.jpg?s=2048x2048&w=is&k=20&c=Gn7vDWyGvusHX5PXlBuYDXuf_MHwDeEdETUK7CR2b90=");
+    background: url("https://cdn.pixabay.com/photo/2023/09/16/18/18/wallpaper-8257343_1280.png");
+    background-size: cover;
 }
 
 /* To Do List container styling */
@@ -30,6 +32,8 @@ body {
     width: 650px;
     background-color: #F5F3E5;
     border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Header styling */
@@ -41,7 +45,7 @@ body {
     border-bottom: 3px solid var(--primary-color);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    background-color: #864119;
+    background-color: #A39DCF;
     color: white;
 }
 
@@ -76,13 +80,13 @@ body {
     height: 28px;
     border: 1px solid black;
     border-radius: 4px;
-    background-color: green;
+    background-color: #CAD77B;
     color: var(--secondary-color);
 
 }
 
 .addTaskBtn:hover {
-    background-color: rgb(1, 86, 1);
+    background-color: #bac863;
     cursor: pointer;
 }
 
@@ -125,7 +129,8 @@ body {
 }
 
 .taskRow:hover {
-    background-color: #f5eecb;
+    background-color: #f5efd5;
+    border-radius: 8px;
 }
 
 .material-symbols-outlined {
@@ -183,13 +188,89 @@ body {
 .timeContainer {
     height: 30px;
     padding: 10px;
-    position: fixed;
-    bottom: 13%;
-    right: 29%;
+    position: absolute;
+    bottom: 1%;
+    right: 0%;
 }
 
 .timeContainer p {
     color: var(--primary-color);
     text-align: right;
     font-size: 14px;
+}
+
+/* Media Queries */
+
+/* For devices with screen width less than 900px (Tablets) */
+@media screen and (max-width: 900px) {
+    .toDoListContainer {
+        width: 500px;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .enterTask {
+        width: 400px;
+    }
+
+    .addTaskBtn {
+        width: 100px;
+        height: 25px;
+    }
+
+    .taskItem {
+        width: 100%;
+    }
+}
+
+/* For devices with screen width less than 600px (Mobile Phones) */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 20px 20px;
+    }
+
+    .toDoListContainer {
+        width: 100%;
+        height: 500px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .header {
+        height: 80px;
+        padding-left: 10px;
+    }
+
+    .enterTask {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .addTaskBtn {
+        width: 100%;
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    .filterContainer {
+        text-align: center;
+    }
+
+    .filterContainer select {
+        font-size: 12px;
+    }
+
+    .taskItem {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .timeContainer {
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+    }
 }

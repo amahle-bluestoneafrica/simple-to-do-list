@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateDateTime() {
         const now = new Date();
 
+        const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][now.getDay()];
         const day = now.getDate().toString().padStart(2, '0');
         const month = (now.getMonth() + 1).toString().padStart(2, '0'); 
         const year = now.getFullYear();
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const minutes = now.getMinutes().toString().padStart(2, '0');
         const seconds = now.getSeconds().toString().padStart(2, '0');
 
-        const formattedDateTime = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+        const formattedDateTime = `${weekday} ${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
 
         document.getElementById('datetime').textContent = formattedDateTime;
     }
