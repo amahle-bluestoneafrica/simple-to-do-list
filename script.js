@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             alert("Please enter a task!");
         }
     });
-
+    
     // Filters tasks based on completed, pending and all
     document.getElementById('filterSelect').addEventListener('change', function () {
         const filter = this.value;
